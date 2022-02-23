@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "sched.h": "c",
+        "stdio.h": "c",
+        "assert.h": "c",
+        "string.h": "c",
+        "syscall_number.h": "c",
+        "lock.h": "c"
+    }
+}

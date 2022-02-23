@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "gdb",
+            "request": "attach",
+            "name": "Attach to QEMU",
+            "executable": "${workspaceRoot}/main",
+            "target": "remote:1234",
+            "stopAtEntry": true,
+            "remote": true,
+            "cwd": "${workspaceRoot}",
+            "gdbpath": "riscv64-unknown-linux-gnu-gdb"
+        }
+    ]
+}

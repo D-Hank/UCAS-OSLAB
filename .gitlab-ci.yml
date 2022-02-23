@@ -1,0 +1,23 @@
+stages:
+    - qemu 
+
+default:
+    image: gitlab.agileserve.org.cn:15050/fenghaoyuan19/oslab/ubuntu:OSLab_V0.2
+    tags:
+        - k8s
+
+qemu:
+    stage: qemu
+    before_script:
+        - cp run_qemu.sh /
+        - cp debug.sh /
+        - cd UCAS_OS/Project1-Bootloader
+        - make
+        - cp image /
+        - cd /
+        - chmod +x run_qemu.sh
+        - chmod +x debug.sh
+    script: 
+        - sleep 3000
+    tags:
+        - k8s

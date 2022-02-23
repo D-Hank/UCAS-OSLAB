@@ -1,0 +1,8 @@
+{
+    "debug.console.fontSize": 17,
+    "terminal.integrated.fontSize": 15,
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "syscall.h": "c"
+    }
+}
